@@ -1,0 +1,31 @@
+@import "config", "variables", "nav", "carousel", "info";
+
+body{
+    background: $white;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "carousel info";
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.and.carousel {
+    position: fixed; // Needed because the carousel overrides the position property
+  }
+
+
+
+
+

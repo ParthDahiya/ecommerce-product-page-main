@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    text-decoration: none;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+};

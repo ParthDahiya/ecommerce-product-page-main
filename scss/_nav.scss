@@ -1,0 +1,141 @@
+ul{
+    float: right;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 20px;
+   
+    
+}
+
+.navbar1{
+    background-color:$white;
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+    .nav{
+        &_left{
+            grid-column: 1 /2;
+            .nav_item{
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 9px;
+                padding-right: 5px;
+        
+                .nav_link{
+                    line-height: 80px;
+                    color: $dark-grayish-blue;
+                    text-decoration: none;
+                    font-weight: 400;
+                    font-size: 90%;
+                }
+            }
+            .nav_item:hover{
+                border-bottom: solid 5px $orange;
+                border-radius: 5px;
+            }
+        
+            .nav_brand{
+                line-height: 80px;
+                padding: 0 100px;
+            }
+        }
+        &_right{
+            grid-column: 2/3;
+            display: inline-block;
+            width: 100%;
+            padding-right: 7vw;
+            
+            .nav_item{
+                display: inline ;
+                float: right;
+                line-height: 80px;
+                margin: 0 9px;
+
+                
+                .profile-pic{
+                    height: 40px;
+                    width: 40px;
+                    border: 2px solid $orange;
+                    border-radius: 50%;
+                }
+            }
+            }
+            
+    }
+
+    
+}
+
+.media{
+    img{
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        border-radius: 5px;
+    }
+
+    &-body{
+        height: 70px;
+    }
+
+    
+    
+}
+.checkout{
+    display:block;
+    width: 250px;
+    background: $orange;
+    color: $pale-orange;
+    border-radius: 10px;
+    font-weight: 700;
+    height: 50px;
+}
+
+.border-bottom{
+    border-bottom: solid 0.5px $dark-grayish-blue;
+    display: block;
+    width: 86%;
+    margin: auto;
+}
+
+
+
+// *{
+//     padding: 0;
+//     margin: 0;
+//     text-decoration: none;
+//     list-style: none;
+//     box-sizing: border-box;
+// }
+
+// nav {
+//     background: #333;
+//     height: 80px;
+//     width: 100%;
+// }
+
+
+
+
+// ul {
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+//     background-color: #333;
+//   }
+  
+//   li {
+//     float: left;
+//   }
+  
+//   li a {
+//     display: block;
+//     color: white;
+//     text-align: center;
+//     padding: 14px 16px;
+//     text-decoration: none;
+//   }

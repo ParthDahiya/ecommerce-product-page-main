@@ -1,0 +1,270 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-decoration: none;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar1 {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar1 .nav_left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 /2;
+}
+
+.navbar1 .nav_left .nav_item {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 9px;
+  padding-right: 5px;
+}
+
+.navbar1 .nav_left .nav_item .nav_link {
+  line-height: 80px;
+  color: #68707d;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 90%;
+}
+
+.navbar1 .nav_left .nav_item:hover {
+  border-bottom: solid 5px #ff7d1a;
+  border-radius: 5px;
+}
+
+.navbar1 .nav_left .nav_brand {
+  line-height: 80px;
+  padding: 0 100px;
+}
+
+.navbar1 .nav_right {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: inline-block;
+  width: 100%;
+  padding-right: 7vw;
+}
+
+.navbar1 .nav_right .nav_item {
+  display: inline;
+  float: right;
+  line-height: 80px;
+  margin: 0 9px;
+}
+
+.navbar1 .nav_right .nav_item .profile-pic {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #ff7d1a;
+  border-radius: 50%;
+}
+
+.media img {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+}
+
+.media-body {
+  height: 70px;
+}
+
+.checkout {
+  display: block;
+  width: 250px;
+  background: #ff7d1a;
+  color: #ffede0;
+  border-radius: 10px;
+  font-weight: 700;
+  height: 50px;
+}
+
+.border-bottom {
+  border-bottom: solid 0.5px #68707d;
+  display: block;
+  width: 86%;
+  margin: auto;
+}
+
+.carousel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: carousel;
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-inner {
+  border-radius: 15px;
+  width: 72%;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 7%;
+}
+
+#carousel-thumb .carousel-indicators {
+  position: static;
+  margin: 20px 20px;
+}
+
+#carousel-thumb .carousel-indicators > li {
+  width: 100px;
+  padding: 0 6px 0 4px;
+}
+
+#carousel-thumb .carousel-indicators li img {
+  display: block;
+  opacity: 0.5;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+}
+
+#carousel-thumb .carousel-indicators li.active img {
+  opacity: 1;
+  border: solid 2px #ff7d1a;
+}
+
+.info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: info;
+  text-align: left;
+  margin-top: 17%;
+  padding-left: 3rem;
+  width: 80%;
+}
+
+.info h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ff7d1a;
+  opacity: 0.9;
+}
+
+.info h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #1d2025;
+}
+
+.info .disc {
+  margin-top: 20px;
+  color: #68707d;
+  font-weight: 300;
+}
+
+.info h2 {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.info .discount {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ff7d1a;
+  background: #ffede0;
+  width: 45px;
+  height: 25px;
+  border-radius: 15%;
+  margin: 0 0 0 15px;
+  padding: 0 0 0 7px;
+}
+
+.info .del-text {
+  color: #b6bcc8;
+  font-weight: 700;
+}
+
+.input-group {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #f7f8fd;
+  border-radius: 10px;
+}
+
+.input-group .form-control {
+  width: 65px;
+  display: inline-block;
+  background: #f7f8fd;
+  border: none;
+}
+
+.input-group .counter {
+  display: inline-block;
+  color: #ff7d1a;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.add-cart {
+  display: inline-block;
+  width: 60%;
+  background: #ff7d1a;
+  color: #ffede0;
+  border-radius: 10px;
+  font-weight: 700;
+  height: 60px;
+  margin-left: 10px;
+}
+
+body {
+  background: white;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "carousel info";
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal.and.carousel {
+  position: fixed;
+}
+/*# sourceMappingURL=main.css.map */
