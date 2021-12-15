@@ -13,8 +13,6 @@
     overflow:hidden;
     margin: auto;
     margin-top: 7%;
-
-
 }
 
 // .carousel-indicators li {
@@ -27,7 +25,6 @@
 #carousel-thumb{
     .carousel-indicators {
         position: static;
-        // margin-top: 20px;
         margin: 20px 20px;
     }
 }
@@ -45,6 +42,111 @@
 }
 
 #carousel-thumb .carousel-indicators li.active img {
+    opacity: 1;
+    border: solid 2px $orange;
+    
+}
+
+// .carousel-control-icon{
+//     border-radius: 50%;
+//     background-color: $white;
+//     color: $orange;
+//     &:hover{
+//         color: $orange;
+
+//     }
+// }
+
+
+
+//-------------- modal----------------
+
+.modal{
+    position: fixed;
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 45px;
+        width: 45px;
+        background-size: 100%, 100%;
+        border-radius: 50%;
+        background: $white;
+    }
+
+    .carousel-control-next-icon:after
+    {
+        content: '>';
+        font-weight: 700;
+        font-size: 35px;
+        color: $orange;
+        line-height: 40px;
+
+    }
+
+    .carousel-control-prev-icon:after {
+        content: '<';
+        font-weight: 700;
+        font-size: 35px;
+        color: $orange;
+        line-height: 40px;
+
+    }
+    
+}
+
+.modal-header{
+    border: none;
+}
+.modal-backdrop
+{
+    opacity:0.7 !important;
+}
+
+
+.close{
+    z-index: 2;
+    font-size: 2rem;
+    color: $white;
+    &:hover{
+        color: $orange;
+    }
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+
+
+.carousel-item {  
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#lightbox{
+    .carousel-indicators {
+        position: relative;
+        // margin-top: 20px;
+        padding-top: 500px;
+    }
+}
+#lightbox .carousel-indicators>li {
+    width: 100px;
+    padding: 0 6px 0 4px ;
+    margin: 20px 10px;
+    background-color: transparent;
+}
+
+#lightbox .carousel-indicators li img {
+    display: block;
+    opacity: 0.5;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+#lightbox .carousel-indicators li.active img {
     opacity: 1;
     border: solid 2px $orange;
     

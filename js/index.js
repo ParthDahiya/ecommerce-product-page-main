@@ -20,3 +20,6 @@ $(function () {
 $('.popover-dismiss').popover({
     trigger: 'focus'
   });
+  $('#staticBackdrop').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus'); 
+  })

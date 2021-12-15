@@ -149,6 +149,88 @@ ul {
   border: solid 2px #ff7d1a;
 }
 
+.modal {
+  position: fixed;
+}
+
+.modal .carousel-control-prev-icon,
+.modal .carousel-control-next-icon {
+  height: 45px;
+  width: 45px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background: white;
+}
+
+.modal .carousel-control-next-icon:after {
+  content: '>';
+  font-weight: 700;
+  font-size: 35px;
+  color: #ff7d1a;
+  line-height: 40px;
+}
+
+.modal .carousel-control-prev-icon:after {
+  content: '<';
+  font-weight: 700;
+  font-size: 35px;
+  color: #ff7d1a;
+  line-height: 40px;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-backdrop {
+  opacity: 0.7 !important;
+}
+
+.close {
+  z-index: 2;
+  font-size: 2rem;
+  color: white;
+}
+
+.close:hover {
+  color: #ff7d1a;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+.carousel-item {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#lightbox .carousel-indicators {
+  position: relative;
+  padding-top: 500px;
+}
+
+#lightbox .carousel-indicators > li {
+  width: 100px;
+  padding: 0 6px 0 4px;
+  margin: 20px 10px;
+  background-color: transparent;
+}
+
+#lightbox .carousel-indicators li img {
+  display: block;
+  opacity: 0.5;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+}
+
+#lightbox .carousel-indicators li.active img {
+  opacity: 1;
+  border: solid 2px #ff7d1a;
+}
+
 .info {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -262,9 +344,5 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.modal.and.carousel {
-  position: fixed;
 }
 /*# sourceMappingURL=main.css.map */
