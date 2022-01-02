@@ -95,10 +95,25 @@
   </div>
 
   <nav class="navbar1">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      
+    </div>
+    
+    <span class="menu_btn" style="font-size:30px;cursor:pointer; padding: 20px;" onclick="openNav()">&#9776; </span>
     <div class="nav_left">
+      
       <div class="nav_item">
+        
         <a href="#!" class="nav_brand"><img src="../images/logo.svg" alt=""></a>
       </div>
+      <span id="nav_links">
         <ul>
           <li class="nav_item">
             <a href="" class="nav_link">Collections</a>
@@ -116,6 +131,8 @@
             <a href="" class="nav_link">Contact</a>
           </li>
         </ul>
+      </span>
+        
      
     </div>
     <div class="nav_right">
@@ -265,7 +282,7 @@
 <footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a target="_blank" href="https://github.com/ParthDahiya">Parth Dahiya</a>.
   </div>
 </footer>
   

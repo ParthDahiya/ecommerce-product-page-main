@@ -15,9 +15,9 @@ main {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+    padding-top: 30px;
     justify-content: center;
     align-items: center;
 }
 
+@import "responsive";
