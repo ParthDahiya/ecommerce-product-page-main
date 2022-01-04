@@ -30,8 +30,8 @@ ul{
             .nav_item{
                 display: inline-block;
                 line-height: 80px;
-                margin: 0 8px;
-                padding-right: 5px;
+                margin: 0 ;
+                padding-right:10px;
         
                 .nav_link{
                     line-height: 80px;
@@ -48,7 +48,7 @@ ul{
         
             .nav_brand{
                 line-height: 80px;
-                padding: 0 100px;
+                padding: 0 80px;
             }
         }
         &_right{
